@@ -1,8 +1,25 @@
 aid: verse-medical
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/verse-medical.png
 name: Verse Medical
-description: 'Verse Medical is a company surfaced as a portfolio company of sapphire-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Verse Medical is a software-driven durable medical equipment (DME) supplier delivering
+  hospital-quality healthcare at home across the United States. Founded in 2018 (Y Combinator S18) and
+  based in New York City, the company builds software that replaces fax-based ordering so doctors and
+  clinics can prescribe, order, and manage medical supplies such as catheters, wound dressings, and
+  diabetes supplies for patients at home. Backed by General Catalyst, SignalFire, Sapphire Ventures,
+  Abstract Ventures, and Y Combinator. No public developer API, docs portal, or specification surface
+  was found during enrichment; this profile carries company identity plus a probed domain-security
+  posture.'
 url: https://raw.githubusercontent.com/api-evangelist/verse-medical/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +29,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthtech
+- Durable Medical Equipment
+- Home Healthcare
+- Medical Supplies
+- Health Technology
+- DME
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/verse-medical-domain-security.yml
 - type: Website
   url: https://www.versemedical.com/
